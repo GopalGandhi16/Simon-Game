@@ -1,0 +1,41 @@
+
+body{
+    background-image: radial-gradient( center,red,pink,white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box{
+    height: 130px;
+    width:130px;
+    border: 7px solid black;
+    border-radius: 20%;
+    margin:20px;
+}
+.row1{
+    display: inline-block;
+}
+.row2{
+    display: inline-block;
+}
+#red{
+    background-color:red;
+}
+#green{
+    background-color:green;
+}
+#yellow{
+    background-color:yellow;
+}
+#blue{
+    background-color:blue;
+}
+.flash{
+ animation:flash 0.5s;
+}
+@keyframes flash{
+    50%{
+        opacity:0.5;
+        background-color: white;
+    }
+}
